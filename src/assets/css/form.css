@@ -1,0 +1,833 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	display: grid!important;
+	grid-template-columns: 1fr 1fr!important;
+	grid-gap: 3px!important;
+}
+
+section{
+	height: 400px;
+	max-height: 700px;
+	width: 100%; 
+	box-sizing: border-box;
+	position: relative;
+	border:1px solid green;
+}
+
+/*============ Form 1 ==============*/
+
+#form1 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#form1 .box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 70%;
+	height: 80%;
+	background-color: rgb(0,0,0,.5);
+	box-shadow: 0 0 20px rgba(0,0,0,.4);
+}
+
+#form1 .box form {
+	position: relative;
+}
+
+#form1 .box form .header {
+	text-align: center;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	background-color: rgba(0,0,200,.2);
+}
+
+#form1 .box form .header h1 {
+	font-size: 1.8em;
+	letter-spacing: 3px;
+	color: #ffc;
+}
+
+#form1 .box form .inputBox {
+	position: relative;
+	margin: 30px 60px;
+	box-sizing: border-box;
+} 
+
+#form1 .box form .inputBox input {
+	height: 35px;
+	width: 100%;
+	padding: 10px 3px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: #ffe;
+	box-sizing: border-box;
+	border-bottom: 2px solid #ffe;
+	transition: .2s;
+}
+
+#form1 .box form .inputBox label {
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 20px;
+	color: #ffe;
+	transition: .2s;
+}
+
+#form1 .box form .inputBox input:focus ~ label,
+#form1 .box form .inputBox input:valid ~ label {
+	top: -20px;
+	left: 0;
+	font-size: 13px;
+	color: #0da;	
+}
+#form1 .box form .inputBox input:focus {
+	border-color: #0da;
+}
+
+#form1 .box form .inputBox button {
+	padding: 5px 20px;
+	font-size: 20px;
+	line-height:30px;
+	letter-spacing: 2px;
+	font-weight: bolder;
+	color: #0da;
+	background-color: #ffe;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	transition: .2s;
+}
+
+#form1 .box form .inputBox button:hover {
+	background-color: #0da;
+	color: #ffc;
+}
+
+/*============ Form 2 ==============*/
+
+#form2 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#form2 .box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 70%;
+	height: 80%;
+	background-color: rgb(0,0,0,.5);
+	box-shadow: 0 0 20px rgba(255,255,255,.2);
+}
+
+#form2 .box form {
+	position: relative;
+}
+
+#form2 .box form .header {
+	text-align: center;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	background-color: rgba(0,0,200,.2);
+	box-shadow: 0 5px 10px rgba(0,0,255,.3);
+	z-index: 2;
+}
+
+#form2 .box form .header h1 {
+	font-size: 1.8em;
+	letter-spacing: 3px;
+	color: #ffc;
+}
+
+#form2 .box form .inputBox {
+	position: relative;
+	margin: 30px 60px;
+	box-sizing: border-box;
+} 
+
+#form2 .box form .inputBox input {
+	height: 35px;
+	width: 100%;
+	padding: 10px 3px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: #ffe;
+	box-sizing: border-box;
+/*	border-bottom: 2px solid #ffe;
+*/	transition: .2s;
+}
+
+#form2 .box form .inputBox span {
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #ffe;
+}
+
+#form2 .box form .inputBox input:focus ~ span {
+	animation: borderAnimation 1s linear;
+	background-color: #0da;
+}
+
+#form2 .box form .inputBox label {
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 20px;
+	color: #ffe;
+	transition: .2s;
+	box-sizing: border-box;
+	padding: 2px 3px; 
+}
+
+#form2 .box form .inputBox input:focus ~ label,
+#form2 .box form .inputBox input:valid ~ label {
+	top: -20px;
+	left: 0;
+	font-size: 13px;
+	background-color: #e34;
+	color: #ffe;		
+}
+#form2 .box form .inputBox input:focus {
+	border-color: #0da;
+}
+
+#form2 .box form .inputBox button {
+	padding: 5px 20px;
+	font-size: 20px;
+	line-height:30px;
+	letter-spacing: 2px;
+	font-weight: bolder;
+	color: #0da;
+	background-color: rgba(255,255,255,.3);
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	transition: .2s;
+}
+
+#form2 .box form .inputBox button:hover {
+	background-color: rgba(0,200,180,.4);
+	color: #ffc;
+}
+
+@keyframes borderAnimation {
+	0% {
+		transform: scaleX(1);
+		background-color: #ffe;
+	}
+	50% {
+		transform: scaleX(0);
+		background-color: #ffe;
+		transform-origin: left;
+	}
+	100% {
+		transform: scaleX(1);
+		background-color: #0da;
+	}
+}
+
+/*============ Form 3 ==============*/
+
+#form3 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#form3 .box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 70%;
+	height: 80%;
+	background-color: rgb(0,0,0,.5);
+	box-shadow: 0 0 20px rgba(255,255,255,.2);
+}
+
+#form3 .box form {
+	position: relative;
+}
+
+#form3 .box form .header {
+	text-align: center;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	background-color: rgba(0,0,200,.2);
+	box-shadow: 0 5px 10px rgba(0,0,255,.3);
+	z-index: 2;
+}
+
+#form3 .box form .header h1 {
+	font-size: 1.8em;
+	letter-spacing: 3px;
+	color: #e34;
+}
+
+#form3 .box form .inputBox {
+	position: relative;
+	margin: 30px 60px;
+	box-sizing: border-box;
+} 
+
+#form3 .box form .inputBox input {
+	height: 35px;
+	width: 100%;
+	padding: 10px 3px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: #ffe;
+	box-sizing: border-box;
+/*	border-bottom: 2px solid #ffe;
+*/	transition: .2s;
+}
+
+#form3 .box form .inputBox span {
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #ffe;
+}
+
+#form3 .box form .inputBox input:focus ~ span {
+	animation: borderAnimationTwo 1s linear;
+	background-color: #e34;
+}
+
+#form3 .box form .inputBox label {
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 20px;
+	color: #ffe;
+	transition: .2s;
+}
+
+#form3 .box form .inputBox input:focus ~ label,
+#form3 .box form .inputBox input:valid ~ label {
+	top: -20px;
+	left: 0;
+	font-size: 13px;
+	color: #e34;	
+}
+#form3 .box form .inputBox input:focus {
+	border-color: #0da;
+}
+
+#form3 .box form .inputBox button {
+	padding: 5px 20px;
+	font-size: 20px;
+	line-height:30px;
+	letter-spacing: 2px;
+	font-weight: bolder;
+	color: #e34;
+	background-color: rgba(255,255,255,.3);
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	transition: .2s;
+}
+
+#form3 .box form .inputBox button:hover {
+	background-color: rgba(220,040,050,.4);
+	color: #ffc;
+}
+
+@keyframes borderAnimationTwo {
+	0% {
+		transform: scaleX(1);
+		background-color: #ffe;
+	}
+	50% {
+		transform: scaleX(0);
+		background-color: #ffe;
+	}
+	100% {
+		transform: scaleX(1);
+		background-color: #e34;
+	}
+}
+
+/*============ Form 4 ==============*/
+#form4 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#form4 .wraiper1 {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+#form4 .wraiper1 .box {
+	position: relative;
+}
+
+#form4 .wraiper1 .box button {
+	font-size: 2em;
+	font-family: arial;
+	font-weight: bolder;
+	letter-spacing: 1px;
+	background:rgba(255,0,200,.5);
+	border:none;
+	outline: none;
+	border-radius: 10px;
+	box-sizing: border-box;
+	padding: 3px 5px;
+	color: #93c;
+}
+#form4 .wraiper1 .box button:hover {
+	background:rgba(255,0,200,.8);
+	color: #33e;
+}
+#form4 .wraiper2 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: .5s;
+	transform: scale(0);
+	transform-origin: top right;
+}
+
+#form4 .wraiper2 .box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 70%;
+	height: 80%;
+	background-color: rgb(0,0,0,.5);
+	box-shadow: 0 0 20px rgba(255,255,255,.2);
+}
+
+#form4 .wraiper2 .box form {
+	position: relative;
+}
+
+#form4 .wraiper2 .box form .header {
+	text-align: center;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	background-color: rgba(0,0,200,.5);
+	box-shadow: 0 5px 10px rgba(0,0,255,.3);
+	z-index: 2;
+}
+
+#form4 .wraiper2 .box form .header h1 {
+	font-size: 1.8em;
+	letter-spacing: 3px;
+	color: #ffc;
+}
+#form4 .wraiper2 .box form .header i {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 20px;
+	color: #23f;
+	background-color: rgba(0,0,200,.5);
+	padding: 5px;
+}
+
+#form4 .wraiper2 .box form .header i:hover {
+	background-color: rgba(200,040,030,.7);
+	color: #fee;
+	cursor: pointer;
+}
+
+#form4 .wraiper2 .box form .inputBox {
+	position: relative;
+	margin: 30px 60px;
+	box-sizing: border-box;
+} 
+
+#form4 .wraiper2 .box form .inputBox input {
+	height: 35px;
+	width: 100%;
+	padding: 10px 3px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: #ffe;
+	box-sizing: border-box;
+	transition: .2s;
+}
+
+#form4 .wraiper2 .box form .inputBox span {
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #ffe;
+}
+
+#form4 .wraiper2 .box form .inputBox input:focus ~ span.reverse {
+	animation: borderAnimationthree 1s linear;
+	background-color: #0da;
+}
+
+#form4 .wraiper2 .box form .inputBox input:focus ~ span.reverse1 {
+	animation: borderAnimation 1s linear;
+	background-color: #0da;
+	animation-delay: .1s;
+}
+
+#form4 .wraiper2 .box form .inputBox label {
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 20px;
+	color: #ffe;
+	transition: .2s;
+}
+
+#form4 .wraiper2 .box form .inputBox input:focus ~ label,
+#form4 .wraiper2 .box form .inputBox input:valid ~ label {
+	top: -20px;
+	left: 0;
+	font-size: 13px;
+	color: #0da;	
+}
+#form4 .wraiper2 .box form .inputBox input:focus {
+	border-color: #0da;
+}
+
+#form4 .wraiper2 .box form .inputBox button {
+	padding: 5px 20px;
+	font-size: 20px;
+	line-height:30px;
+	letter-spacing: 2px;
+	font-weight: bolder;
+	color: #0da;
+	background-color: rgba(255,255,255,.3);
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	transition: .2s;
+}
+
+#form4 .wraiper2 .box form .inputBox button:hover {
+	background-color: rgba(0,200,180,.4);
+	color: #ffc;
+	cursor: pointer;
+}
+
+@keyframes borderAnimationthree {
+	0% {
+		transform: scaleX(1);
+		background-color: #ffe;
+	}
+	50% {
+		transform: scaleX(0);
+		background-color: #ffe;
+		transform-origin: right;
+	}
+	100% {
+		transform: scaleX(1);
+		background-color: #0da;
+	}
+}
+
+#form4 .wraiper2.active {
+	transform: scale(1);
+}
+
+/*============ Form 5 ==============*/
+
+#form5 {
+	width: 100%;
+	height: 100%;
+	background-color: #e23;
+	overflow: hidden;
+}
+#form5 video {
+	width: 100%;
+	height: 100%;
+}
+	
+#form5 .box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 70%;
+	height: 80%;
+	background-color: rgb(0,0,0,.5);
+	box-shadow: 0 0 20px rgba(255,255,255,.2);
+}
+
+#form5 .box form {
+	position: relative;
+}
+
+#form5 .box form .header {
+	text-align: center;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	background-color: rgba(0,0,200,.2);
+	box-shadow: 0 5px 10px rgba(0,0,255,.3);
+	z-index: 2;
+}
+
+#form5 .box form .header h1 {
+	font-size: 1.8em;
+	letter-spacing: 3px;
+	color: #ffc;
+}
+
+#form5 .box form .inputBox {
+	position: relative;
+	margin: 30px 60px;
+	box-sizing: border-box;
+} 
+
+#form5 .box form .inputBox input {
+	height: 35px;
+	width: 100%;
+	padding: 10px 3px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: #ffe;
+	box-sizing: border-box;
+/*	border-bottom: 2px solid #ffe;
+*/	transition: .2s;
+}
+
+#form5 .box form .inputBox span {
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #ffe;
+}
+
+#form5 .box form .inputBox input:focus ~ span {
+	animation: borderAnimation 1s linear;
+	background-color: #0da;
+}
+
+#form5 .box form .inputBox label {
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 20px;
+	color: #ffe;
+	transition: .2s;
+	box-sizing: border-box;
+	padding: 2px 3px; 
+}
+
+#form5 .box form .inputBox input:focus ~ label,
+#form5 .box form .inputBox input:valid ~ label {
+	top: -20px;
+	left: 0;
+	font-size: 13px;
+	background-color: #e34;
+	color: #ffe;		
+}
+#form5 .box form .inputBox input:focus {
+	border-color: #0da;
+}
+
+#form5 .box form .inputBox button {
+	padding: 5px 20px;
+	font-size: 20px;
+	line-height:30px;
+	letter-spacing: 2px;
+	font-weight: bolder;
+	color: #0da;
+	background-color: rgba(255,040,050,.5);
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	transition: .2s;
+}
+
+#form5 .box form .inputBox button:hover {
+	background-color: rgba(0,200,180,.4);
+	color: #ffc;
+}
+
+@keyframes borderAnimation {
+	0% {
+		transform: scaleX(1);
+		background-color: #ffe;
+	}
+	50% {
+		transform: scaleX(0);
+		background-color: #ffe;
+		transform-origin: left;
+	}
+	100% {
+		transform: scaleX(1);
+		background-color: #0da;
+	}
+}
+
+/*============ Form 6 ==============*/
+
+
+#form6 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#form6 .box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 70%;
+	height: 80%;
+	background-color: rgb(0,0,0,.5);
+	box-shadow: 0 0 20px rgba(255,255,255,.2);
+}
+
+#form6 .box form {
+	position: relative;
+
+}
+
+#form6 .box form .header {
+	text-align: center;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	background-color: rgba(0,0,200,.2);
+	box-shadow: 0 5px 10px rgba(0,0,255,.3);
+	z-index: 2;
+}
+
+#form6 .box form .header h1 {
+	font-size: 1.8em;
+	letter-spacing: 3px;
+	color: #ffc;
+}
+
+#form6 .box form .inputBox {
+	position: relative;
+	margin: 30px 60px;
+	box-sizing: border-box;
+} 
+
+#form6 .box form .inputBox input {
+	height: 35px;
+	width: 100%;
+	padding: 10px 3px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: #ffe;
+	box-sizing: border-box;
+	transition: .2s;
+}
+
+#form6 .box form .inputBox span {
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #ffe;
+	left: 0;
+}
+
+#form6 .box form .inputBox input:focus ~ span {
+	animation: borderAnimation 1s linear;
+	background-color: #e34;
+}
+
+#form6 .box form .inputBox label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 20px;
+	color: #ffe;
+	box-sizing: border-box;
+	padding: 2px 3px; 
+	transition: all .7s;
+}
+
+#form6 .box form .inputBox input:focus ~ label,
+#form6 .box form .inputBox input:valid ~ label {
+	left: 77%;
+	font-size: 16px;
+	background-color: #e34;
+	color: #ffe;		
+}
+#form6 .box form .inputBox input:focus {
+	border-color: #0da;
+}
+
+#form6 .box form .inputBox button {
+	padding: 5px 20px;
+	font-size: 20px;
+	line-height:30px;
+	letter-spacing: 2px;
+	font-weight: bolder;
+	color: #0da;
+	background-color: rgba(255,255,255,.3);
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	transition: .2s;
+}
+
+#form6 .box form .inputBox button:hover {
+	background-color: rgba(0,200,180,.4);
+	color: #ffc;
+}
+
+
+/*============ Form 7 ==============*/
+
+/*============ Form 1 ==============*/
+
+
+/*============ Form 1 ==============*/
+
+/*============ Form 1 ==============*/
+
+/*============ Form 1 ==============*/
+
+/*============ Form 1 ==============*/
+
+/*============ Form 1 ==============*/
+
+
+/*============ Form 1 ==============*/
+/*============ Form 1 ==============*/
+
+
+

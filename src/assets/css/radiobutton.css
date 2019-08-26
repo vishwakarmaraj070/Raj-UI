@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  section {
+     position: relative;
+      min-height: 200px;
+      width: 100%;
+      border: 1px solid green;
+      overflow-x: hidden;
+  }
+  .wraiper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .3em;
+  }
+  
+  /*========== radio 1 ===========*/
+  
+  section:nth-child(1){
+      background-color: #E34;
+  }
+  
+  #radio1 .box {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #222;
+    box-sizing: border-box;
+    display: flex;
+  }
+  
+  #radio1 .box h3 {
+    color: #fff;
+    font-size: 22px;
+    margin-right: 20px;
+    line-height: 30px;
+    padding: 3px 10px;
+  
+  }
+  #radio1 .box label{
+    display: flex;
+  }
+  #radio1 .box label input {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    margin-top: 5px;
+    display: none;
+  }
+  #radio1 .box label input:checked ~ span {
+    background-color: #e34;
+    color: #fff;
+  }
+  #radio1 .box label span {
+    color: #222;
+    font-size: 19px;
+    line-height: 30px;
+    margin-right: 10px;
+    background-color: #fff;
+    padding: 3px 10px;
+    transition: .5s;
+    border-radius: 5px;
+  }
+  /*========== radio 1 ===========*/
+  section:nth-child(2){
+    background-color: #43faa4;
+  }
+  
+  #radio2 .box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #f4f4a5;
+    display: flex;
+  }
+  #radio2 .box h3 {
+    color: #222;
+    font-size: 22px;
+    margin-right: 20px;
+    line-height: 30px;
+    padding: 3px 10px;
+  
+  }
+  #radio2 .box label{
+    display: flex;
+  }
+  #radio2 .box label input {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    margin-top: 5px;
+    display: none;
+  }
+  #radio2 .box label input:checked ~ .circle:before {
+    background-color: #e34;
+    color: #fff;
+  
+  }
+  
+  #radio2 .box label input:checked ~ .circle {
+    box-shadow: 0 0 10px rgba(230, 030,030, .5);
+    box-shadow: 0 0 20px rgba(230, 030,030, .5);
+    box-shadow: 0 0 30px rgba(230, 030,030, .5);
+    box-shadow: 0 0 10px rgba(230, 030,030, 1);
+  }
+  
+  #radio2 .box label span {
+    color: #222;
+    font-size: 19px;
+    line-height: 30px;
+    padding: 3px 5px;
+    transition: .5s;
+    border-radius: 5px;
+  }
+  #radio2 .box label .circle {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fee;
+    margin: 8px 5px 0 0;
+    box-sizing: border-box;
+    border:1px solid #222;
+    transition: .3s;
+  }
+  #radio2 .box label .circle:before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    right: 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(220,030,020,.3);
+    transition: .3s;
+  }
+  /*========== radio 1 ===========*/
+  
+  /*========== radio 1 ===========*/
+  
+  /*========== radio 1 ===========*/
+  
+  /*========== radio 1 ===========*/
+  
+  /*========== radio 1 ===========*/
+  
+  /*========== radio 1 ===========*/
+  
+  /*========== radio 1 ===========*/
+  
+  /*========== radio 1 ===========*/
+  
+  /*========== radio 1 ===========*/
+  
+  /*========== radio 1 ===========*/
+  
+  /*========== radio 1 ===========*/
+  
+  /*========== radio 1 ===========*/
+  
+  /*========== radio 1 ===========*/
+  
+  /*========== radio 1 ===========*/
+  
+  /*========== radio 1 ===========*/
+  
+  /*========== radio 1 ===========*/
+  
+  /*========== radio 1 ===========*/
+  

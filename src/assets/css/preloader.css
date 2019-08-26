@@ -1,0 +1,978 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  section {
+     position: relative;
+      min-height: 200px;
+      height: 350px;
+      max-height: 450px;
+      width: 100%;
+      border: 1px solid green;
+      overflow-x: hidden;
+      background: #262626;
+  }
+  .wraiper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .3em;
+  }
+  
+  
+  /*========== Preloader1 ===========*/
+  
+  #Preloader1 {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: transparent;
+  
+  }
+  
+  #Preloader1 span {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #268626;
+    animation: animate 2s infinite;
+  }
+  
+  #Preloader1 span:nth-child(1) {
+    background: green;
+    box-shadow: 0px 0px 20px green;
+  }
+  
+  #Preloader1 span:nth-child(2) {
+    background: red;
+    box-shadow: 0 0 20px red;
+    animation-delay: -1s;
+  }
+  
+  @keyframes animate {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    5% {
+      top: 0;
+      left: 0;
+    }
+     25% {
+      top: 0;
+      left: 50%;
+    }
+    30% {
+      top: 0;
+      left: 50%;
+    }
+    50% {
+      top: 50%;
+      left: 50%;
+    }
+    55% {
+      top: 50%;
+      left: 50%;
+    }
+    75% {
+      top: 50%;
+      left: 0;
+    }
+    80% {
+      top: 50%;
+      left: 0;
+    }
+    100% {
+      top: 0;
+      left: 0;
+    }
+  }
+  
+  /*========== Preloader2 ===========*/
+  
+  #Preloader2 {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    background: transparent;
+  }
+  
+  #Preloader2 span {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #268626;
+    animation: animate 2s linear infinite;
+  }
+  
+  #Preloader2 span:nth-child(1) {
+    background: green;
+    box-shadow: 0 0 25px green;
+   
+  }
+  
+  #Preloader2 span:nth-child(2) {
+    background: red;
+    box-shadow: 0 0 25px red;
+    animation-delay: -1s;
+  }
+  
+  #Preloader2 span:nth-child(3) {
+    background: blue;
+    box-shadow: 0 0 25px blue;
+    animation-delay: -0.5s;
+  }
+  
+  #Preloader2 span:nth-child(4) {
+    background: yellow;
+    box-shadow: 0 0 25px yellow;
+     animation-delay: -1.5s;
+  }
+  
+  @keyframes animate {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    5% {
+      top: 0;
+      left: 0;
+    }
+     25% {
+      top: 0;
+      left: 50%;
+    }
+    30% {
+      top: 0;
+      left: 50%;
+    }
+    50% {
+      top: 50%;
+      left: 50%;
+    }
+    55% {
+      top: 50%;
+      left: 50%;
+    }
+    75% {
+      top: 50%;
+      left: 0;
+    }
+    80% {
+      top: 50%;
+      left: 0;
+    }
+    100% {
+      top: 0;
+      left: 0;
+    }
+  }
+  
+  /*========== Preloader3 ===========*/
+  
+  #Preloader3 {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    background: transparent;
+  
+  }
+  
+  #Preloader3 span {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: #268626;
+    border-radius: 4px;
+    animation: animate 2s linear infinite;
+  }
+  
+  #Preloader3 span:nth-child(1) {
+    background: green;
+    box-shadow: 0 0 25px green;
+    animation-delay: 0s;
+   
+  }
+  
+  #Preloader3 span:nth-child(2) {
+    background: red;
+    box-shadow: 0 0 25px red;
+    animation-delay: -0.667s;
+  }
+  
+  #Preloader3 span:nth-child(3) {
+    background: yellow;
+    box-shadow: 0 0 25px yellow;
+    animation-delay: -1.336s;
+  }
+  
+  @keyframes animate {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    5% {
+      top: 0;
+      left: 0;
+    }
+     25% {
+      top: 0;
+      left: 50%;
+    }
+    30% {
+      top: 0;
+      left: 50%;
+    }
+    50% {
+      top: 50%;
+      left: 50%;
+    }
+    55% {
+      top: 50%;
+      left: 50%;
+    }
+    75% {
+      top: 50%;
+      left: 0;
+    }
+    80% {
+      top: 50%;
+      left: 0;
+    }
+    100% {
+      top: 0;
+      left: 0;
+    }
+  }
+  
+  /*========== Preloader4==========*/
+  
+  #Preloader4 {
+    position: absolute;
+    top: calc(50% - 110px);
+    left: calc(50% - 110px);
+    width: 200PX;
+    height: 200PX;
+    border:2px solid #b7b2b2;
+    box-shadow: 2px 0 0 rgba(0, 0, 0, .2);
+    border-radius: 50%;
+    border-bottom: 2px solid red;
+    animation: animateA 3s linear infinite;
+  }
+  
+  #Preloader4:before {
+    content: '';
+    position:absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    border:2px solid #b7b2b2;
+    box-shadow: 2px 0 0 rgba(0, 0, 0, .2);
+    border-radius: 50%;
+    border-bottom: 2px solid green;
+    animation: animateA 2s linear infinite;
+  }
+  
+  #Preloader4:after {
+    content: '';
+    position:absolute;
+    top: 40px;
+    bottom: 40px;
+    left: 40px;
+    right: 40px;
+    border:2px solid #b7b2b2;
+    box-shadow: 2px 0 0 rgba(0, 0, 0, .2);
+    border-radius: 50%;
+    border-bottom: 2px solid blue;
+    animation: animateA 1s linear infinite;
+  
+  }
+  
+  @keyframes animateA {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  /*========== Preloader5==========*/
+  #Preloader5 {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+  }
+  
+  #Preloader5 span {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    animation: dotAnimation 3s linear infinite;
+  }
+  
+  @keyframes dotAnimation {
+    0%{
+      transform: scale(.5);
+    }
+    70%{
+      transform: scale(1.5);
+    }
+    100%{
+      transform: scale(.5);
+    }
+  }
+  
+  #Preloader5 span:nth-child(1){
+    left: -140px;
+    background: #122b3e;
+    animation-delay: -0s;
+  }
+  #Preloader5 span:nth-child(2){
+    left: -110px; 
+    background: #bd1e24;
+    animation-delay: -2s;
+  }
+  #Preloader5 span:nth-child(3){
+    left: -80px;
+    background: #007256;
+    animation-delay: -4s;
+  }
+  #Preloader5 span:nth-child(4){
+    left: -50px;
+    background: #0067a7;
+    animation-delay: -6s;
+  }
+  #Preloader5 span:nth-child(5){
+    left: -20px;
+    background: #964f8e;
+    animation-delay: -8s;
+  }
+  #Preloader5 span:nth-child(6){
+    left: 10px;
+    background: #f6c700;
+    animation-delay: -10s;
+  }
+  #Preloader5 span:nth-child(7){
+    left: 40px;
+    background: #09568d;
+    animation-delay: -12s;
+  }
+  #Preloader5 span:nth-child(8){
+    left: 70px;
+    background: #172035;
+    animation-delay: -14s;
+  }
+  #Preloader5 span:nth-child(9){
+    left: 100px;
+    background: #457725;
+    animation-delay: -16s;
+  }
+  
+  /*========== Preloader6==========*/
+  
+  #Preloader6 {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+  }
+  
+  #Preloader6 span {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    animation: dotsAnimation 1.4s ease-in-out infinite;
+  }
+  
+  @keyframes dotsAnimation {
+    0%, 40%, 100%{
+      transform: scale(.5);
+    }
+    20%{
+      transform: scale(1.5);
+    }
+  }
+  
+  #Preloader6 span:nth-child(1){
+    left: -140px;
+    background: #122b3e;
+    animation-delay: -1.4s;
+    box-shadow: 0 0 50px #122b3e;
+  }
+  #Preloader6 span:nth-child(2){
+    left: -110px; 
+    background: #bd1e24;
+    animation-delay: -1.2s;
+    box-shadow: 0 0 50px #bd1e24;
+  }
+  #Preloader6 span:nth-child(3){
+    left: -80px;
+    background: #007256;
+    animation-delay: -1s;
+    box-shadow: 0 0 50px #007256;
+  }
+  #Preloader6 span:nth-child(4){
+    left: -50px;
+    background: #0067a7;
+    animation-delay: -.8s;
+    box-shadow: 0 0 50px #0067a7;
+  }
+  #Preloader6 span:nth-child(5){
+    left: -20px;
+    background: #964f8e;
+    animation-delay: -.6s;
+    box-shadow: 0 0 50px #964f8e;
+  }
+  #Preloader6 span:nth-child(6){
+    left: 10px;
+    background: #f6c700;
+    animation-delay: -.4s;
+    box-shadow: 0 0 50px #f6c700;
+  }
+  #Preloader6 span:nth-child(7){
+    left: 40px;
+    background: #09568d;
+    animation-delay: -.2s;
+    box-shadow: 0 0 50px #09568d;
+  }
+  #Preloader6 span:nth-child(8){
+    left: 70px;
+    background: #172035;
+    animation-delay: 0s;
+    box-shadow: 0 0 50px #172035;
+  }
+  #Preloader6 span:nth-child(9){
+    left: 100px;
+    background: #457725;
+    box-shadow: 0 0 50px #122b3e;
+    animation-delay: -.6s;
+  }
+  
+  /*========== Preloader7==========*/
+  section:nth-child(7){
+    background: black;
+  }
+  #Preloader7 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #Preloader7 .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    animation: boxShadowAnimation 1s infinite;
+  }
+  
+  @keyframes boxShadowAnimation {
+    0%{
+      box-shadow: 0 0 10px rgb(255, 255, 255),
+                  0 0 10px rgb(255, 255, 255),
+                  0 0 10px rgb(255, 255, 255),
+                  0 0 10px rgb(255, 255, 255),
+                  0 0 10px rgb(255, 255, 255);
+    }
+    60%{
+      box-shadow: 0 0 20px rgb(255, 255, 255),
+                  0 0 80px rgb(255, 255, 255),
+                  0 0 160px rgb(255, 255, 255),
+                  0 0 320px rgb(255, 255, 255),
+                  0 0 640px rgb(255, 255, 255);
+    }
+    100%{
+      box-shadow: 0 0 10px rgba(255, 255, 255, 1),
+                  0 0 10px rgba(255, 255, 255, 1),
+                  0 0 10px rgba(255, 255, 255, 1),
+                  0 0 10px rgba(255, 255, 255, 1),
+                  0 0 10px rgba(255, 255, 255, 1);
+    }
+  }
+  
+  /*========== Preloader8==========*/
+  
+  section:nth-child(8){
+    background: black;
+  }
+  
+  #Preloader8 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding:0;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+  }
+  
+  #Preloader8 .box {
+    position: absolute;
+    border:2px solid #040404;
+  }
+  
+  #Preloader8 .box.face1{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+    border-right: 2px solid #feec04;
+    border-bottom: 2px solid #feec04;
+    border-radius: 50%;
+    animation: circleAnimation 2s linear infinite;
+  }
+  
+  #Preloader8 .box.face2{
+    top: 40px;
+    bottom: 40px;
+    left: 40px;
+    right: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+    border-radius: 50%;
+    border-top: 2px solid #2458af;
+    border-left: 2px solid #2458af;
+    animation: circleAnimation 2s linear reverse infinite;
+  }
+  
+  #Preloader8 .box .circle {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 50%;
+    width: 50%;
+    height: 2px;
+    background: #000;
+    transform-origin: left;
+  }
+  #Preloader8 .box .circle:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    top: -4px;
+    right: -6px;
+    border-radius: 50%;
+  }
+  
+  #Preloader8 .box.face1 .circle:before{
+    background: #feec04;
+    box-shadow: 0 0 20px #feec04,
+                0 0 40px #feec04,
+                0 0 60px #feec04,
+                0 0 80px #feec04,
+                0 0 20px #feec04;
+  }
+  
+  #Preloader8 .box.face2 .circle:before{
+     background: #2458af; 
+     box-shadow: 0 0 20px #2458af,
+                0 0 40px #2458af,
+                0 0 60px #2458af,
+                0 0 80px #2458af,
+                0 0 20px #2458af;
+  }
+  
+  #Preloader8 .box.face1 .circle {
+    transform: rotate(-45deg);
+  }
+  
+  #Preloader8 .box.face2 .circle {
+    transform: rotate(-45deg);
+  }
+  
+  @keyframes circleAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+     100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  /*========== Preloader9==========*/
+  section:nth-child(9){
+    background-color: #fe3;
+  }
+  
+  #Preloader9 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #Preloader9 span {
+    position: absolute;
+    width: 5px;
+    height: 15px;
+    background-color: #e32;
+    box-sizing: border-box;
+    animation: nineAnimation .6s linear infinite;
+  }
+  
+  @keyframes nineAnimation {
+    0% {
+      transform: scaleY(1);
+    }
+    100% {
+      transform: scaleY(2);
+    }
+  }
+  
+  #Preloader9 span:nth-child(1){
+    left: -20px;
+    animation-delay: 0s;
+  }
+  
+  #Preloader9 span:nth-child(2){
+    left: -10px;
+    animation-delay: 0.3s;
+  }
+  
+  #Preloader9 span:nth-child(3){
+    left: 0;
+    animation-delay: 0.6s;
+  }
+  
+  #Preloader9 span:nth-child(4){
+    left: 10px;
+    animation-delay: 0.9s;
+  }
+  
+  #Preloader9 span:nth-child(5){
+    left: 20px;
+    animation-delay: 1.2s;
+  }
+  
+  /*========== Preloader10==========*/
+  section:nth-child(10){
+    background-color: #e32;
+  }
+  
+  #Preloader10 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #Preloader10 span {
+    position: absolute;
+    width: 5px;
+    height: 15px;
+    background-color: #fe3;
+    box-sizing: border-box;
+    animation: tenAnimation 1.2s linear infinite;
+  }
+  
+  @keyframes tenAnimation {
+    0% {
+      transform: scaleY(1);
+    }
+    25% {
+      transform: scaleY(1);
+    }
+    50% {
+      transform: scaleY(1);
+    }
+    75% {
+      transform: scaleY(1);
+    }
+    100% {
+      transform: scaleY(3);
+    }
+  }
+  
+  #Preloader10 span:nth-child(1){
+    left: -20px;
+    animation-delay: 0.2s;
+  }
+  
+  #Preloader10 span:nth-child(2){
+    left: -10px;
+    animation-delay: 0.4s;
+  }
+  
+  #Preloader10 span:nth-child(3){
+    left: 0;
+    animation-delay: .6s;
+  }
+  
+  #Preloader10 span:nth-child(4){
+    left: 10px;
+    animation-delay: .8s;
+  }
+  
+  #Preloader10 span:nth-child(5){
+    left: 20px;
+    animation-delay: 1s;
+  } 
+  
+  /*========== Preloader11==========*/
+  section:nth-child(11){
+    background-color: #34f;
+  }
+  
+  #Preloader11 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #Preloader11 span {
+    position: absolute;
+    width: 5px;
+    height: 15px;
+    background-color: #fe3;
+    box-sizing: border-box;
+    animation: elevenAnimation 2.2s linear infinite;
+  }
+  
+  @keyframes elevenAnimation {
+    0% {
+      transform: scaleY(1);
+    }
+    10% {
+      transform: scaleY(1);
+    }
+    20% {
+      transform: scaleY(1);
+    }
+    30% {
+      transform: scaleY(1.5);
+    }
+    40% {
+      transform: scaleY(2);
+    }
+    50% {
+      transform: scaleY(3);
+    }
+    60% {
+      transform: scaleY(2);
+    }
+    70% {
+      transform: scaleY(1.5);
+    }
+    80% {
+      transform: scaleY(1);
+    }
+    90% {
+      transform: scaleY(1);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+  
+  #Preloader11 span:nth-child(1){
+    left: -40px;
+    animation-delay: 0.2s;
+  }
+  
+  #Preloader11 span:nth-child(2){
+    left: -30px;
+    animation-delay: 0.4s;
+  }
+  
+  #Preloader11 span:nth-child(3){
+    left: -20px;
+    animation-delay: .6s;
+  }
+  
+  #Preloader11 span:nth-child(4){
+    left: -10px;
+    animation-delay: .8s;
+  }
+  
+  #Preloader11 span:nth-child(5){
+    left: 0;
+    animation-delay: 1s;
+  } 
+  #Preloader11 span:nth-child(6){
+    left: 10px;
+    animation-delay: 1.2s;
+  } 
+  #Preloader11 span:nth-child(7){
+    left: 20px;
+    animation-delay: 1.4s;
+  }
+  #Preloader11 span:nth-child(8){
+    left: 30px;
+    animation-delay: 1.6s;
+  } 
+  #Preloader11 span:nth-child(9){
+    left: 40px;
+    animation-delay: 1.8s;
+  }
+  
+  /*========== Preloader12==========*/
+  section:nth-child(12){
+    background-color: #000;
+  }
+  #Preloader12{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    perspective: 600px;
+  }
+  
+  #Preloader12 span {
+    position: absolute;
+    border:10px solid #444;
+    border-radius: 4px;
+    perspective: 600px;
+  }
+  
+  #Preloader12 span:before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 10px;
+    height: 70px;
+    background-color: #ff2;
+  }
+  
+  #Preloader12 span:after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 10px;
+    height: 70px;
+    background-color: #ff2;
+  }
+  
+  #Preloader12 span:nth-child(1){
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: twelbeAnimation 8s linear infinite;
+  }
+  
+  #Preloader12 span:nth-child(2){
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+      animation: twelbeAnimation 6s linear infinite;
+  
+  }
+  
+  #Preloader12 span:nth-child(3){
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    animation: twelbeAnimation 3s linear infinite;
+  
+  }
+  
+  @keyframes twelbeAnimation {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  /*========== Preloader13==========*/
+  section:nth-child(13) {
+    background-color: #ffe;
+  }
+  
+  #Preloader13 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+  #Preloader13 span:nth-child(1) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #E34;
+    animation: thirtheenAnimatiion 3s linear infinite;
+  }
+  
+  #Preloader13 span:nth-child(2) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #34e;
+    animation: thirtheenAnimatiionTwo 3s linear infinite;
+  
+  }
+  
+  @keyframes thirtheenAnimatiion {
+    0%{
+      transform: translateY(100%);
+      left: 100%;
+    }
+    100%{
+      transform: translateY(-100%);
+      left: -50%;
+    }
+  }
+  
+  
+  
+  /*========== Preloader14==========*/
+  
+  /*========== Preloader15==========*/
+  
+  /*========== Preloader16==========*/
+  
+  /*========== Preloader17==========*/
+  
+  /*========== Preloader18==========*/
+  
+  /*========== Preloader19==========*/
+  
+  

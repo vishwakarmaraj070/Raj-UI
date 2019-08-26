@@ -1,0 +1,1006 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  section {
+     position: relative;
+      min-height: 200px;
+      height: 350px;
+      max-height: 450px;
+      width: 100%;
+      border: 1px solid green;
+      overflow-x: hidden;
+  }
+  
+  section:nth-child(odd){
+    background: #ffa121;
+  }
+  
+  section:nth-child(even){
+    background: #00ecfe;
+  }
+  section:nth-child(3n){
+    background: #0020fe;
+  }
+  section:nth-child(6n){
+    background: #feec0e;
+  }
+  
+  .wraiper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .3em;
+  }
+  
+  /*============ icon 1 ============*/
+  
+  #icon1 .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 30%;
+  }
+  
+  #icon1 .box ul{
+    list-style: none;
+    display: flex;
+    margin: 25px 45px;
+  }
+  
+  #icon1 .box ul li {
+    position: relative;
+    margin-left: 10px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background: #fff;
+    overflow: hidden;
+    z-index: 1;
+    border:1px solid #222;
+  }
+  
+  #icon1 .box ul li a {
+    font-weight: bolder;
+    font-size: 22px;
+    color: #222;
+    transition: .5s;
+  }
+  
+  #icon1 .box ul li:hover a{
+    color: #fff;
+  }
+  
+  #icon1 .box ul li:before {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: -1;
+  }
+  #icon1 .box ul li:nth-child(1){
+    padding: 10px 18px;
+  }
+  #icon1 .box ul li:nth-child(1):before{
+    background: #3B5998;
+  }
+  #icon1 .box ul li:nth-child(2):before{
+    background: #55ACEE;
+  }
+  #icon1 .box ul li:nth-child(3):before{
+    background: #EA4335;
+  }
+  #icon1 .box ul li:nth-child(4):before{
+    background: #7CBB00;
+  }
+  #icon1 .box ul li:nth-child(5):before{
+    background: #3F729B;
+  }
+  
+  #icon1 .box ul li:hover:before {
+    bottom: 0;
+  }
+  /*============ icon 2 ============*/
+  
+  #icon2 .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 30%;
+  }
+  
+  #icon2 .box ul{
+    list-style: none;
+    display: flex;
+    margin: 25px 45px;
+  }
+  
+  #icon2 .box ul li {
+    position: relative;
+    margin-left: 10px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background: #fff;
+    overflow: hidden;
+    border:1px solid #111;
+    z-index: 1;
+    transition: .5s;
+  }
+  
+  #icon2 .box ul li:hover {
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    transform: scale(1.2) rotate(360deg);
+  }
+  
+  #icon2 .box ul li a {
+    font-weight: bolder;
+    font-size: 22px;
+    color: #222;
+    transition: .5s;
+  }
+  
+  #icon2 .box ul li:hover a{
+    color: #fff;
+  }
+  
+  #icon2 .box ul li:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0);
+  }
+  #icon2 .box ul li:nth-child(1){
+    padding: 10px 18px;
+  }
+  #icon2 .box ul li:nth-child(1):before{
+    background: #3B5998;
+  }
+  #icon2 .box ul li:nth-child(2):before{
+    background: #55ACEE;
+  }
+  #icon2 .box ul li:nth-child(3):before{
+    background: #EA4335;
+  }
+  #icon2 .box ul li:nth-child(4):before{
+    background: #7CBB00;
+  }
+  #icon2 .box ul li:nth-child(5):before{
+    background: #3F729B;
+  }
+  #icon2 .box ul li:hover:before {
+    transform: scale(1);
+  }
+  
+  /*============ icon 3 ============*/
+  
+  #icon3 .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 30%;
+  }
+  
+  #icon3 .box ul{
+    list-style: none;
+    display: flex;
+    margin: 25px 45px;
+  }
+  
+  #icon3 .box ul li {
+    position: relative;
+    margin-left: 10px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background: #fff;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  #icon3 .box ul li a {
+    font-weight: bolder;
+    font-size: 22px;
+    color: #222;
+    transition: .5s;
+  }
+  
+  #icon3 .box ul li:hover a i{
+    color: #fff;
+    transition: 1s;
+    transform: rotateY(360deg);
+  }
+  
+  #icon3 .box ul li:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: -1;
+    transform: scale(0,1);
+  }
+  #icon3 .box ul li:nth-child(1){
+    padding: 10px 18px;
+  }
+  #icon3 .box ul li:nth-child(1):before{
+    background: #3B5998;
+  }
+  #icon3 .box ul li:nth-child(2):before{
+    background: #55ACEE;
+  }
+  #icon3 .box ul li:nth-child(3):before{
+    background: #EA4335;
+  }
+  #icon3 .box ul li:nth-child(4):before{
+    background: #7CBB00;
+  }
+  #icon3 .box ul li:nth-child(5):before{
+    background: #3F729B;
+  }
+  
+  #icon3 .box ul li:hover:before {
+   transform: scale(1,1);
+  }
+  
+  /*============ icon 4 ============*/
+  
+  #icon4 .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 30%;
+  }
+  
+  #icon4 .box ul{
+    list-style: none;
+    display: flex;
+    margin: 25px 45px;
+  }
+  
+  #icon4 .box ul li {
+    position: relative;
+    margin-left: 10px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background: #fff;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  #icon4 .box ul li a {
+    font-weight: bolder;
+    font-size: 22px;
+    color: #222;
+    transition: .5s;
+  }
+  
+  #icon4 .box ul li:hover a{
+    color: #fff;
+  }
+  #icon4 .box ul li:hover a i{
+    transition: 1s;
+    transform: rotateY(360deg);
+  }
+  
+  #icon4 .box ul li:before {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    right: 0;
+    width: 100%;
+    height: 50%;
+    transition: .5s;
+    z-index: -1;
+  }
+  
+  #icon4 .box ul li:after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    transition: .5s;
+    z-index: -1;
+  }
+  #icon4 .box ul li:nth-child(1){
+    padding: 10px 18px;
+  }
+  #icon4 .box ul li:nth-child(1):before{
+    background: #3B5998;
+  }
+  #icon4 .box ul li:nth-child(2):before{
+    background: #55ACEE;
+  }
+  #icon4 .box ul li:nth-child(3):before{
+    background: #EA4335;
+  }
+  #icon4 .box ul li:nth-child(4):before{
+    background: #7CBB00;
+  }
+  #icon4 .box ul li:nth-child(5):before{
+    background: #3F729B;
+  }
+  
+  #icon4 .box ul li:hover:before {
+    bottom: 0;
+  }
+  
+  #icon4 .box ul li:nth-child(1):after{
+    background: #8B9DC3;
+  }
+  #icon4 .box ul li:nth-child(2):after{
+    background: #292F33;
+  }
+  #icon4 .box ul li:nth-child(3):after{
+    background: #4285F4;
+  }
+  #icon4 .box ul li:nth-child(4):after{
+    background: #7B0099;
+  }
+  #icon4 .box ul li:nth-child(5):after{
+    background: #FF9900;
+  }
+  
+  #icon4 .box ul li:hover:after {
+    top: 0;
+  }
+  
+  
+  /*============ icon 5 ============*/
+  
+  #icon5 .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 30%;
+  }
+  
+  #icon5 .box ul{
+    list-style: none;
+    display: flex;
+    margin: 25px 45px;
+  }
+  
+  #icon5 .box ul li {
+    position: relative;
+    margin-left: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border:1px solid #222;
+    background: #fff;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  #icon5 .box ul li a {
+    font-weight: bolder;
+    font-size: 22px;
+    color: #222;
+    transition: .5s;
+  }
+  
+  #icon5 .box ul li:hover a{
+    color: #fff;
+  }
+  
+  #icon5 .box ul li:hover a i{
+    transition: 1s;
+    transform: rotateY(-360deg)scale(1.3);
+  }
+  
+  #icon5 .box ul li:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: -1;
+  }
+  #icon5 .box ul li:nth-child(1){
+    padding: 10px 18px;
+  }
+  #icon5 .box ul li:nth-child(1):before{
+    background: #3B5998;
+  }
+  #icon5 .box ul li:nth-child(2):before{
+    background: #55ACEE;
+  }
+  #icon5 .box ul li:nth-child(3):before{
+    background: #EA4335;
+  }
+  #icon5 .box ul li:nth-child(4):before{
+    background: #7CBB00;
+  }
+  #icon5 .box ul li:nth-child(5):before{
+    background: #3F729B;
+  }
+  
+  #icon5 .box ul li:hover:before {
+    left: 0;
+  }
+  
+  /*============ icon 6 ============*/
+  
+  #icon6 .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 30%;
+  }
+  
+  #icon6 .box ul{
+    list-style: none;
+    display: flex;
+    margin: 25px 45px;
+  }
+  
+  #icon6 .box ul li {
+    position: relative;
+    margin-left: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: #fff;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 1;
+  }
+  
+  #icon6 .box ul li a {
+    font-weight: bolder;
+    font-size: 22px;
+    color: #222;
+    transition: .5s;
+  }
+  
+  #icon6 .box ul li:hover a{
+    color: #fff;
+  }
+  #icon6 .box ul li:hover a i{
+    transition: .5s;
+    transform: scale(1.2);
+  }
+  
+  #icon6 .box ul li:nth-child(1){
+    padding: 10px 18px;
+  }
+  #icon6 .box ul li:nth-child(1){
+    background: #3B5998;
+  }
+  #icon6 .box ul li:nth-child(2){
+    background: #55ACEE;
+  }
+  #icon6 .box ul li:nth-child(3){
+    background: #EA4335;
+  }
+  #icon6 .box ul li:nth-child(4){
+    background: #7CBB00;
+  }
+  #icon6 .box ul li:nth-child(5){
+    background: #3F729B;
+  }
+  
+  #icon6 .box ul li:hover {
+    transform: translateY(-10px);
+  }
+  
+  /*============ icon 7 ============*/
+  
+  #icon7 .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 30%;
+  }
+  
+  #icon7 .box ul{
+    list-style: none;
+    display: flex;
+    margin: 25px 45px;
+  }
+  
+  #icon7 .box ul li {
+    position: relative;
+    margin-left: 10px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background: #fff;
+  }
+  
+  #icon7 .box ul li a {
+    font-weight: bolder;
+    font-size: 22px;
+    color: #222;
+    transition: .5s;
+  }
+  
+  #icon7 .box ul li:hover a{
+    color: #fff;
+  }
+  
+  #icon7 .box ul li:nth-child(1){
+    padding: 10px 18px;
+  }
+  #icon7 .box ul li:nth-child(1):before{
+    content: 'facebook';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    font-size: 10px;
+    background: #3B5998;
+    transform: scale(0);
+  }
+  #icon7 .box ul li:nth-child(2):before{
+    content: 'Twitter';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+    font-size: 10px;
+    transform: scale(0);
+    background: #55ACEE;
+  
+  }
+  #icon7 .box ul li:nth-child(3):before{
+    content: 'google';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    text-transform: uppercase;
+    text-align: center;
+     padding: 5px;
+       color: #fff;
+    font-size: 10px;
+    transform: scale(0);
+    background: #4285F4;
+  }
+  #icon7 .box ul li:nth-child(4):before{
+    content: 'linkedin';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+      color: #fff;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+     padding: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    transform: scale(0);
+    background: #7CBB00;
+  }
+  #icon7 .box ul li:nth-child(5):before{
+    content: 'Twitter';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+      color: #fff;
+    transition: .5s;
+     padding: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    transform: scale(0);
+     background: #3F729B;
+  }
+  
+  #icon7 .box ul li:hover:before {
+    transform: scale(2);
+    z-index: 1;
+  }
+  
+  /*============ icon 8 ============*/
+  
+  #icon8 .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 30%;
+  }
+  
+  #icon8 .box ul{
+    list-style: none;
+    display: flex;
+    margin: 25px 45px;
+  }
+  
+  #icon8 .box ul li {
+    position: relative;
+    margin-left: 18px;
+    padding: 10px 15px;
+    transform: rotate(45deg);
+    background: #fff;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  #icon8 .box ul li a {
+    font-weight: bolder;
+    font-size: 22px;
+    color: #222;
+    transition: .5s;
+  }
+  
+  #icon8 .box ul li:hover a{
+    color: #fff;
+  }
+  #icon8 .box ul li a i{
+    transform: rotate(-45deg);
+  }
+  
+  #icon8 .box ul li:hover a i{
+    transform: scale(1.2)rotate(-45deg);
+  }
+  
+  #icon8 .box ul li:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    transform: scale(0);
+    z-index: -1;
+  }
+  #icon8 .box ul li:nth-child(1){
+    padding: 10px 18px;
+  }
+  #icon8 .box ul li:nth-child(1):before{
+    background: #3B5998;
+  }
+  #icon8 .box ul li:nth-child(2):before{
+    background: #55ACEE;
+  }
+  #icon8 .box ul li:nth-child(3):before{
+    background: #EA4335;
+  }
+  #icon8 .box ul li:nth-child(4):before{
+    background: #7CBB00;
+  }
+  #icon8 .box ul li:nth-child(5):before{
+    background: #3F729B;
+  }
+  
+  #icon8 .box ul li:hover:before {
+    transform: scale(1);
+  }
+  
+  /*============ icon 9 ============*/
+  
+  #icon9 .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 30%;
+  }
+  
+  #icon9 .box ul{
+    list-style: none;
+    display: flex;
+    margin: 25px 45px;
+    position: absolute;
+  }
+  #icon9 .box ul li {
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    margin-left: 10px;
+    overflow: hidden;
+  }
+  
+  #icon9 .box ul li a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #icon9 .box ul li span.first{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 20%;
+    border-left: 2px solid #fff;
+    border-top: 2px solid #fff;
+    transition: .5s;
+  
+  }
+  
+  #icon9 .box ul li:hover span.first{
+    width: 100%;
+    height: 100%;
+    background-color: #e23;
+    z-index: -1;
+  }
+  #icon9 .box ul li:hover span.second{
+    width: 100%;
+    height: 100%;
+  }
+  #icon9 .box ul li span.second{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    height: 20%;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transition: .5s;
+  }
+  /*============ icon 10 ============*/
+  
+  #icon10 .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 30%;
+  }
+  
+  #icon10 .box ul{
+    list-style: none;
+    display: flex;
+    margin: 25px 40px;
+    position: absolute;
+  }
+  
+  #icon10 .box ul li {
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    margin-left: 15px;
+  }
+  
+  #icon10 .box ul li a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #icon10 .box ul li span.first{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 20%;
+    border-left: 2px solid #fff;
+    border-top: 2px solid #fff;
+    transition: .5s;
+  }
+  
+  #icon10 .box ul li:hover span.first{
+    width: 100%;
+    height: 100%;
+  }
+  #icon10 .box ul li span.first:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #34f;
+    z-index: -1;
+    transform:rotate(0deg)scale(0);
+    opacity: 0;
+  }
+  
+  #icon10 .box ul li:hover span.first:before{
+    transform: scale(1) rotate(45deg);
+    opacity: 1;
+  }
+  
+  #icon10 .box ul li:hover span.second{
+    width: 100%;
+    height: 100%;
+  }
+  
+  #icon10 .box ul li span.second{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    height: 20%;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transition: .5s;
+  }
+  /*============ icon 11 ============*/
+  
+  #icon11 .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 30%;
+  }
+  
+  #icon11 .box ul{
+    list-style: none;
+    display: flex;
+    margin: 25px 45px;
+  }
+  
+  #icon11 .box ul li {
+    position: relative;
+    margin-left: 10px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background: #fff;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  #icon11 .box ul li a {
+    font-weight: bolder;
+    font-size: 22px;
+    color: #222;
+    transition: .5s;
+  }
+  
+  #icon11 .box ul li:hover a{
+    color: #fff;
+  }
+  
+  #icon11 .box ul li:before {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: -1;
+  }
+  #icon11 .box ul li:nth-child(1){
+    padding: 10px 18px;
+  }
+  #icon11 .box ul li:nth-child(1):before{
+    background: #3B5998;
+  }
+  #icon11 .box ul li:nth-child(2):before{
+    background: #55ACEE;
+  }
+  #icon11 .box ul li:nth-child(3):before{
+    background: #EA4335;
+  }
+  #icon11 .box ul li:nth-child(4):before{
+    background: #7CBB00;
+  }
+  #icon11 .box ul li:nth-child(5):before{
+    background: #3F729B;
+  }
+  
+  #icon11 .box ul li:hover:before {
+    bottom: 0;
+  }
+  
+  
+  /*============ icon 12 ============*/
+  
+  #icon12 .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 30%;
+  }
+  
+  #icon12 .box ul{
+    list-style: none;
+    display: flex;
+    margin: 25px 45px;
+  }
+  
+  #icon12 .box ul li {
+    position: relative;
+    margin-left: 10px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background: #fff;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  #icon12 .box ul li a {
+    font-weight: bolder;
+    font-size: 22px;
+    color: #222;
+    transition: .5s;
+  }
+  
+  #icon12 .box ul li:hover a{
+  }
+  
+  #icon12.box ul li:before {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: -1;
+  }
+  #icon12 .box ul li:nth-child(1){
+    padding: 10px 18px;
+  }
+  #icon12.box ul li:nth-child(1):before{
+    background: #3B5998;
+  }
+  #icon12 .box ul li:nth-child(2):before{
+    background: #55ACEE;
+  }
+  #icon12 .box ul li:nth-child(3):before{
+    background: #EA4335;
+  }
+  #icon12 .box ul li:nth-child(4):before{
+    background: #7CBB00;
+  }
+  #icon12 .box ul li:nth-child(5):before{
+    background: #3F729B;
+  }
+  
+  #icon12 .box ul li:hover:before {
+    bottom: 0;
+  }
+  
+  /*============ icon 13 ============*/
+  
+  
+  /*============ icon 1 ============*/
+  
+   
+  

@@ -1,0 +1,1277 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  section{
+    position: relative;
+    height: 200px;
+    width: 100%;
+    background: #c0c0c0;
+    border: 1px solid green;
+  }
+  
+  .wraiper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+  }
+  
+  /* ======== button1======= */
+   
+  #button1{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #262626;
+    color: #ffffff;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+    letter-spacing: 4px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+    border: 2px solid #206bff;
+    transform: .5s;
+  }
+  #button1:hover {
+    background: #ffffff;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+  }
+  
+  #button1:before,
+  #button1:after {
+    content: '';
+    position: absolute;
+    width: 54%;
+    height: 100%;
+    background: #262626;
+    z-index: -1;
+    opacity: 0;
+  } 
+  
+  #button1:hover:before {
+    opacity: 1;
+    top: 5px;
+    left: -5px;
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, .2);
+    animation: animate 2s linear infinite; 
+    
+  }
+  
+  #button1:hover:after {
+    opacity: 1;
+    top: -5px;
+    right: -5px;
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, .2);
+    animation: animate 2s linear infinite;
+    animation-delay: -1s;
+  }
+  
+  @keyframes animate {
+    0%{
+      top:5px;
+    }
+    50%{
+      top:-5px;
+    }
+    100%{
+      top:5px;
+    }
+  } 
+  
+  /* =========== button2 =========== */
+  
+  #button2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 60;
+    line-height: 60px;
+    text-align: center;
+    font-family: verdana;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 6px;
+    color: transparent;
+    overflow: hidden;
+    font-size: 24px;
+    background: #ff0;
+    border: 2px solid #ff0;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .8);
+  }
+  
+  #button2:before {
+    content: 'BUTTON';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #262626;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    transition: .5s
+  }
+  
+  #button2:after {
+    content: 'BUTTON';
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    background: #262626;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    transition: .5s
+  }
+  
+  #button2:hover:before {
+    top:-100%;
+    left: 100%;
+  }
+  
+  #button2:hover:after {
+    top:0;
+    left: 0;
+  }
+  
+  /* ========== button3========== */
+  
+  #button3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 60;
+    line-height: 60px;
+    text-align: center;
+    font-family: verdana;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 6px;
+    color: #262626;
+    font-size: 24px;
+    border: 2px solid #262626;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .8);
+    transition: .5s;
+    overflow: hidden;
+  }
+  
+  #button3 .front {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(1);
+    transition: .8s;
+  }
+  
+  #button3 .back {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: scale(4);
+    transition: .8s;
+    background: #262626;
+    color: #ffffff;
+    opacity: 0;
+  }
+  
+  #button3:hover .front {
+    transform: scale(0);
+  }
+  
+  #button3:hover .back {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  
+  /* ========== button4========== */
+  
+  #button4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 60;
+    line-height: 60px;
+    text-align: center;
+    font-family: verdana;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 6px;
+    color: #262626;
+    font-size: 24px;
+    
+  }
+  
+  #button4:before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 140%;
+    left: 4px;
+    top: -11px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    transition: .5s;
+    
+  }
+  
+  #button4:after {
+    content: '';
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    left: -13px;
+    top: -2px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    transition: .5s;
+    
+  }
+  
+  #button4:hover:before {
+    transform: rotateY(110deg);
+  }
+  #button4:hover:after {
+    transform: rotateX(120deg);
+  }
+  
+  
+  /* ========== button5========== */
+  
+  #button5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 60;
+    line-height: 60px;
+    text-align: center;
+    font-family: verdana;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 6px;
+    color: #262626;
+    font-size: 24px;
+    transition: .5s;
+  }
+  
+  #button5:before,
+  #button5:after,
+  #button5 span:before,
+  #button5 span:after {
+    content: ' ';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #262626;
+    transition: .5s;
+    mix-blend-mode: hue;
+  }
+  
+  #button5:before {
+    top: -2px;
+    left: -2px;
+  }
+  #button5:after{
+    top: -2px;
+    right: -2px;
+  }
+  #button5 span:before {
+    bottom: -2px;
+    left: -2px;
+  }
+  #button5 span:after{
+    bottom: -2px;
+    right: -2px;
+  }
+  
+  #button5:hover:before,
+  #button5:hover:after,
+  #button5:hover span:before,
+  #button5:hover span:after {
+    width: calc(184px / 2);
+    height: calc(64px / 2);
+  }
+  
+  #button5:hover {
+    color: #fff;
+  }
+  
+  /* ========== button6========== */
+  
+  #button6 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 60;
+    line-height: 60px;
+    text-align: center;
+    font-family: verdana;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 6px;
+    color: #262626;
+    font-size: 24px;
+    background: #fff;
+    transition: .5s;
+    overflow: hidden;
+  }
+  
+  #button6:before,
+  #button6:after,
+  #button6 span:before,
+  #button6 span:after {
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background: #262626;
+    transition: .5s;
+    z-index: -1;
+  }
+  
+  
+  #button6:before {
+    top: 0;
+    left: -25%;
+  }
+  
+  #button6:after {
+    top: 0;
+    right: -25%;
+  }
+  
+  #button6 span:before {
+    bottom: -100%;
+    left: 25%;
+  }
+  
+  #button6 span:after {
+    top: -100%;
+    right: 25%;
+  }
+  
+  #button6:hover:before {
+    top: 0;
+    left: 0;
+  }
+  #button6:hover:after {
+    top: 0;
+    right: 0;
+  }
+  #button6:hover span:before {
+    bottom: 0;
+    left: 25%; 
+  }
+  #button6:hover span:after {
+    top: 0;
+    right: 25%;
+  }
+  
+  #button6:hover {
+    color: #fff;
+  }
+  
+  /* ========== button7========== */
+  
+  #button7 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #button7 a {
+    display: inherit;
+    width: 180px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-family: verdana;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 6px;
+    color: #ff0;
+    font-size: 24px;
+    background: transparent;
+    z-index: 1;
+    transition: .5s;
+  
+  }
+  
+  #button7 a:before,
+  #button7 a:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ff0;
+    transition: .3s;
+    opacity: 0;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  #button7 a:before {
+    left: 0;
+    box-shadow: -100px 0 0 #ff0;
+  }
+  #button7 a:after {
+    right: 0;
+    box-shadow: 100px 0 0 #ff0;
+  }
+  
+  #button7 a:hover:before {
+    left: calc(50% - 10px);
+    opacity: 1;
+    box-shadow: 30px 0 0 #ff0;
+  }
+  
+  #button7 a:hover:after {
+    right: calc(50% - 10px);
+    opacity: 1;
+    box-shadow: -30px 0 0 #ff0;
+  }
+  
+  #button7 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff0;
+    z-index: -2;
+    transform: scale(0);
+    transition: .3s;
+    opacity: 0;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .5);
+  
+  }
+  
+  #button7 a:hover span {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: .3s;
+  }
+  
+  #button7 a:hover {
+    color: #262626;
+    transition-delay: .3s;
+  }
+  
+  /* ========== button8========== */
+  
+  #button8 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    border: 2px solid #000;
+    margin: 0;
+    padding: 0;
+  }
+  #button8 li {
+    list-style: none;
+  }
+  
+  #button8 li a {
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #262626;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: verdana;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: .5s;
+  }
+  
+  #button8 li a:hover {
+    color: #fff;
+  }
+  
+  #button8 li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:#262626;
+    z-index: -1;
+    transition: .5s;
+  }
+  
+  #button8 li:nth-child(odd) a:before {
+    right: -100%;
+  }
+  
+  #button8 li:nth-child(even) a:before {
+    left: -100%;
+  }
+  
+  #button8 li:nth-child(odd) a:hover:before {
+    right: 0;
+  }
+  
+  #button8 li:nth-child(even) a:hover:before {
+    left: 0;
+  }
+  
+  
+  
+  /* ========== button9========== */
+  #button9 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #button9 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .5s;  
+  }
+  
+  #button9 a span {
+    padding: 15px;
+    padding-right: 11px;
+    position: relative;
+    transition: .5s;
+    margin: 0;
+  }
+  
+  #button9 a span:nth-child(1){
+    color: #fff;
+    background: #262626;
+  }
+  
+  #button9 a span:nth-child(2){
+    color: #fff;
+    background: #ff3636;
+  }
+  
+  #button9 a span:nth-child(1):before{
+    content: attr(data-attr);
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ff3636;
+    transform-origin: top;
+    transform: rotateX(90deg) translateY(-50%);
+    transition: .5s;
+  }
+  
+  #button9 a:hover span:nth-child(1):before {
+    transform: rotateX(0deg) translateY(0%);
+  }
+  
+  #button9 a span:nth-child(1):after{
+    content: attr(data-attr);
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #262626;
+    transform-origin: bottom;
+    transform: rotateX(0deg) translateY(0%);
+    transition: .5s;
+  }
+  
+  #button9 a:hover span:nth-child(1):after {
+    transform: rotateX(90deg) translateY(50%);
+  }
+  
+  #button9 a span:nth-child(2):before{
+    content: attr(data-attr);
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #262626;
+    transform-origin: bottom;
+    transform: rotateX(90deg) translateY(50%);
+    transition: .5s;
+  }
+  
+  #button9 a:hover span:nth-child(2):before {
+    transform: rotateX(0deg) translateY(0%);
+  }
+  
+  #button9 a span:nth-child(2):after{
+    content: attr(data-attr);
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ff3636;
+    transform-origin: top;
+    transform: rotateX(0deg) translateY(0%);
+    transition: .5s;
+  }
+  
+  #button9 a:hover span:nth-child(2):after {
+    transform: rotateX(90deg) translateY(-50%);
+  }
+  /* ========== button10========== */
+  
+  #button10 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #button10 a{
+    text-decoration: none;
+    font-family: arial;
+    font-size: 28px;
+    color: #262626;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-transform: uppercase;
+  }
+  
+  #button10 a div {
+    background: #fff;
+    position: relative;
+    text-align: center;
+    line-height: 60px;
+    overflow: hidden;
+  }
+  
+  #button10 a div span {
+    position: relative;
+    transition: .2s;
+  }
+  
+  #button10 a div:nth-child(1) {
+    width: 120px;
+    height: 60px;
+  }
+  
+  #button10 a div:nth-child(2) {
+    width: 120px;
+    height: 60px;
+    left: -6px;
+  }
+  
+  #button10 a div:nth-child(1) div,
+  #button10 a div:nth-child(2) div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  #button10 a div:nth-child(1) div {
+    background: #fff;
+  }
+  
+  #button10 a div:nth-child(2) div {
+    background: #262626;
+  }
+  
+  #button10 a div:nth-child(1) div:before,
+  #button10 a div:nth-child(2) div:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition:.5s;
+  } 
+  
+  #button10 a div:nth-child(1) div:before {
+    background: #262626;
+  }
+  
+  #button10 a:hover div:nth-child(1) div:before {
+    transform: translateX(-100%);
+     background: #fff;
+  }
+  
+  #button10 a div:nth-child(1) span {
+    color: #fff;
+    z-index: 1;
+  }
+  
+  #button10 a:hover div:nth-child(1) span{
+    color: #262626;
+    z-index: 1;
+  }
+  
+  #button10 a div:nth-child(2) div:before {
+    background: #fff;
+  }
+  
+  #button10 a div:nth-child(2) span{
+    color: #262626;
+    z-index: 1;
+  }
+  
+  #button10 a:hover div:nth-child(2) span{
+    color: #fff;
+    z-index: 1;
+  }
+  #button10 a:hover div:nth-child(2) div:before {
+    transform: translateX(-100%);
+     background: #262626;
+  }
+  
+  
+  /* ========== button11========== */
+  
+  #button11 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 60;
+    line-height: 60px;
+    text-align: center;
+    font-family: verdana;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 6px;
+    color: #262626;
+    font-size: 24px;
+    border-radius: 80px;
+    border: 2px solid green;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .8);
+    transition: .5s;
+    overflow: hidden;
+  }
+  
+  #button11:before{
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #262626;
+    z-index: -1;
+    opacity: .7;
+    transition: .3s;
+  }
+  
+  #button11:after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #262626;
+    z-index: -1;
+    transition: .3s;
+    transition-delay: .3s;
+  }
+  
+  #button11:hover {
+    color: #fff;
+  }
+  
+  #button11:hover:before{
+    top: 0;
+  }
+  
+  #button11:hover:after{
+    top: 0;
+  }
+  
+  /*============= Button 12 =============*/
+  
+  #button12 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: verdana;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 6px;
+    transform-style: preserve-3d;
+    color: #262626;
+    font-size: 24px;
+    transition: .5s;
+  }
+  
+  #button12:before {
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 40px;
+    background: #fff;
+    color: #262626;
+    transition: .5s;
+    border: 2px solid #262626;
+    transform-origin: right;
+    transform: translateX(-100%) rotateY(90deg);
+  }
+  
+  #button12:after {
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 40px;
+    background: #262626;
+    color: #fff;
+    transition:.5s;
+    border: 2px solid #262626;
+    transform-origin: left;
+    transform: translateX(0) rotateY(0deg);
+  }
+  
+  #button12:hover:before {
+    transform: translateX(0) rotateY(0deg);
+  }
+  
+  #button12:hover:after {
+    transform: translateX(100%) rotateY(90deg);
+  }
+  
+  /*============ button13 =============*/
+  
+  #button13 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 60;
+    line-height: 60px;
+    text-align: center;
+    font-family: verdana;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 6px;
+    color: #fff;
+    background: #262626;
+    font-size: 24px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .8);
+  }
+  
+  #button13:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #03a9f4;
+    z-index: -1;
+    transition: transform .5s;
+    transform-origin: bottom right;
+    transform: scale(0);
+  }
+  
+  #button13:hover:before {
+    transition: transform .2s;
+    transform-origin: top left;
+    transform: scale(1);
+  }
+  
+  #button13:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    border: 2px solid #fff;
+    box-sizing: border-box; 
+    transition: transform .5s;
+    transform-origin: top left;
+    transform: scale(1);
+  }
+  
+  #button13:hover:after {
+    transition: transform .5s;
+    transform-origin: bottom right;
+    transform: scale(0);
+  }
+  
+  /*============== button14 ====================*/
+  
+  #button14 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 60;
+    line-height: 60px;
+    text-align: center;
+    font-family: verdana;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 6px;
+    color: #262626;
+    font-size: 24px;
+    border: 2px solid #262626;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .8);
+    transition: .5s;
+  }
+  
+  #button14:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #262626;
+    transition: transform .5s;
+    transform-origin: right bottom;
+    transform: scale(0);
+    z-index: -1;
+  }
+  
+  #button14:hover{
+    color: #fff;
+  }
+  
+  #button14:hover:before {
+    transform-origin: left top;
+    transform: scale(1);
+   
+  }
+  
+  /*============== button15 ====================*/
+  
+  #button15 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 60;
+    line-height: 60px;
+    text-align: center;
+    font-family: verdana;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 6px;
+    color: #262626;
+    font-size: 24px;
+    border: 2px solid #262626;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .8);
+    transition: .5s;
+  }
+  
+  #button15:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #262626;
+    transition: transform .5s;
+    transform-origin: left top;
+    transform: scale(0);
+    z-index: -1;
+  }
+  
+  #button15:hover{
+    color: #fff;
+  }
+  
+  #button15:hover:before {
+    transition: transform .5s;
+    transform-origin: left top;
+    transform: scale(1);
+   
+  }
+  
+  /*============== button16 ====================*/
+  
+  #button16 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 60;
+    line-height: 60px;
+    text-align: center;
+    font-family: verdana;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 6px;
+    color: #262626;
+    font-size: 24px;
+    border: 2px solid #262626;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .8);
+    transition: .5s;
+  }
+  
+  #button16:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3ff;
+    z-index: -1;
+  }
+  
+  #button16 span {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: #9fa;
+    z-index: -1;
+    transition: .3s;
+    transform: scale(0);
+  }
+  
+  #button16:hover span{
+      transform: scale(1);
+  }
+  
+  #button16 span:nth-child(1){
+    left: 0;
+    top: 0;
+    transform-origin: left top;
+  }
+  
+  #button16 span:nth-child(2){
+    right: 0;
+    top: 0;
+    transform-origin: right top;
+  
+  }
+  
+  #button16 span:nth-child(3){
+    left: 0;
+    bottom: 0;
+      transform-origin: left bottom;
+  
+  }
+  
+  #button16 span:nth-child(4){
+    right: 0;
+    bottom: 0;
+      transform-origin: right bottom;
+  
+  }
+  /*============== button17 ====================*/
+  
+  
+  #button17 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 60;
+    line-height: 60px;
+    text-align: center;
+    font-family: verdana;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 6px;
+    color: #262626;
+    font-size: 24px;
+    z-index: 1;
+    border: 2px solid #262626;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .8);
+    transition: .5s;
+  }
+  
+  #button17:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3ff;
+    transition: .5s;
+    transition-delay:.7s;
+    z-index: -1;
+    transform: scale(0,1);
+  }
+  
+  #button17:hover:before{
+    transform: scale(1,1);
+  }
+  
+  #button17:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3ff;
+    transition: .5s;
+    z-index: -1;
+    transition-delay:.7s;
+    transform: scale(1,0);
+  }
+  
+  #button17:hover:after{
+    transform: scale(1,1);
+  }
+  
+  #button17 span {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: #9fa;
+    z-index: -2;
+    transition: .5s;
+    transform: scale(0);
+  }
+  
+  #button17:hover span{
+      transform: scale(1);
+  }
+  
+  #button17 span:nth-child(1){
+    left: 0;
+    top: 0;
+    transform-origin: left top;
+  }
+  
+  #button17 span:nth-child(2){
+    right: 0;
+    top: 0;
+    transform-origin: right top;
+  
+  }
+  
+  #button17 span:nth-child(3){
+    left: 0;
+    bottom: 0;
+      transform-origin: left bottom;
+  
+  }
+  
+  #button17 span:nth-child(4){
+    right: 0;
+    bottom: 0;
+      transform-origin: right bottom;
+  
+  }
+  
+  /*============== button18 ====================*/
+  
+  #button18 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 60;
+    line-height: 60px;
+    text-align: center;
+    font-family: verdana;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 6px;
+    color: #262626;
+    font-size: 24px;
+    z-index: 1;
+    border: 2px solid #262626;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .8);
+    transition: .5s;
+  }
+  
+  #button18:before {
+    content: '';
+    position: absolute;
+    left: 13px;
+    width: 85%;
+    height: 100%;
+    background-color: #d54;
+    transform: skewX(25deg);
+    transition: .5s;
+    z-index: -1;
+  }
+  
+  #button18:after {
+    content: '';
+    position: absolute;
+    left: 13px;
+    width: 85%;
+    height: 100%;
+    background-color: #2fa;
+    transform: scaleX(1) skewX(25deg);
+    transition: .5s;
+    z-index: -1;
+  }
+  
+  #button18:hover:after{
+    transform: scaleX(0);
+  }
+  
+  /*============== button15 ====================*/
+  
+  /*============== button15 ====================*/
+  
+  /*============== button15 ====================*/
+  
+  /*============== button15 ====================*/
+  
+  /*============== button15 ====================*/
+  
+  /*============== button15 ====================*/
+  
+  /*============== button15 ====================*/
+  
+  /*============== button15 ====================*/
+  
+  /*============== button15 ====================*/
+  
+  /*============== button15 ====================*/
+  
+  /*============== button15 ====================*/
+  
+  /*============== button15 ====================*/
+  
+  /*============== button15 ====================*/
+  
+  /*============== button15 ====================*/
+  
+  
+  
+  
+  
