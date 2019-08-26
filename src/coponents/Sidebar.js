@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import logo from "../assets/mdb-react.png";
+import logo from "../assets/profile.jpg";
 import { MDBListGroup, MDBListGroupItem, MDBIcon } from 'mdbreact';
 import { NavLink } from 'react-router-dom';
 
