@@ -23,12 +23,12 @@ export default class Header extends Component {
             <React.Fragment>
             <MDBNavbar className="flexible-navbar" light expand="md" scrolling>
                 <MDBNavbarBrand href="/">
-                    <strong>MDB</strong>
+                    <strong>Raj</strong>
                 </MDBNavbarBrand>
                 <MDBNavbarToggler onClick = { this.onClick } />
                 <MDBCollapse isOpen = { this.state.collapse } navbar>
                     <MDBNavbarNav left>
-                        <MDBNavItem active>
+                        {/* <MDBNavItem active>
                             <MDBNavLink to="/">Home</MDBNavLink>
                         </MDBNavItem>
                         <MDBNavItem>
@@ -39,10 +39,10 @@ export default class Header extends Component {
                         </MDBNavItem>
                         <MDBNavItem>
                             <a rel="noopener noreferrer"  className="nav-link Ripple-parent" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank">Free tutorials</a>
-                        </MDBNavItem>
+                        </MDBNavItem> */}
                     </MDBNavbarNav>
                     <MDBNavbarNav right>
-                        <MDBNavItem>
+                        {/* <MDBNavItem>
                             <a className="nav-link navbar-link" rel="noopener noreferrer" target="_blank" href="https://pl-pl.facebook.com/mdbootstrap/"><MDBIcon fab icon="facebook" /></a>
                         </MDBNavItem>
                         <MDBNavItem>
@@ -50,9 +50,9 @@ export default class Header extends Component {
                         </MDBNavItem>
                         <MDBNavItem>
                             <a className="border border-light rounded mr-1 nav-link Ripple-parent" rel="noopener noreferrer" href="https://github.com/mdbootstrap/React-Bootstrap-with-Material-Design" target="_blank"><MDBIcon fab icon="github" className="mr-2"/>MDB GitHub</a>
-                        </MDBNavItem>
+                        </MDBNavItem> */}
                         <MDBNavItem>
-                            <a className="border border-light rounded mr-1 nav-link Ripple-parent" rel="noopener noreferrer" href="https://mdbootstrap.com/products/react-ui-kit/" target="_blank"><MDBIcon fab icon="github" className="mr-2"/>Go Pro</a>
+                            <a className="border border-light rounded mr-1 nav-link Ripple-parent" rel="noopener noreferrer" href="https://codepen.io/rajvishwakarma" target="_blank"><MDBIcon fab icon="github" className="mr-2"/>Codepen</a>
                         </MDBNavItem>
                     </MDBNavbarNav>
                 </MDBCollapse>
